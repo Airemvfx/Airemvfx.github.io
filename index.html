@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<!--
+Threat Detected:
+Threat Source: External
+Threat Agent: Human / AnonyMouse
+Threat Intention: Intentional
+Threat Motivation: Extract user data from the website
+Threat Impact: Personal information stolen, used for illegal activities
+Threat Mitigation: There should be login validation implemented. This could be done using 2FA or 3FA to make sure maximum security for all members of the website 
+-->
+
+<!-- Head Section - Internal/External features, CSS and JS-->
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- CSS and JavaScript Integration -->
+    <link rel="stylesheet" href="css\css_master.css">
+    <link rel="stylesheet" href="css\css_local.css">
+    <script src="scripts/js_master.js"></script>
+    
+    <title>SkateRGU - Home</title>
+</head>
+
+<!-- Body Section - Information and Layout -->
+
+<body>
+    <nav>
+        <!-- Logo of the website -->
+        <a href="index.html"><img class="logo" src="images/logo/logo_color.png" alt="Logo" width="500" height="500">
+        </a>
+        <ul><b>
+                <!-- Required Pages -->
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="img_gallery.html">Gallery</a></li>
+                <li><a class="active" href="current_members.html">Members</a></li>
+                <li><a class="active" href="event_calendar.html">Events</a></li>
+                <li><a class="active" href="contact_us.html">Contact us</a></li>
+                <!-- Custom Pages -->
+                <li><a class="active" href="merch.html">Merch</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a class="active" href="FAQ.html">F.A.Q</a></li>
+                <!-- Login JS Form here  -->
+                <li>
+                    <form id="form-login" name="login">
+                        <input id="user" type="text" name="name" value="" placeholder="Your Username" /> <br />
+                        <input id="password" type="text" name="password" value="" placeholder="Your Password" /> <br />
+                        <button id="loginButton" type="button" onclick="loginAlert()">Login</button>
+                    </form>
+                </li>
+        </ul></b>
+    </nav>
+    <!-- Header Section - Website Introduction -->
+
+    <header style="background-image: url('images/skate1.jpg'); background-size: 100%; height: 550px; background-position-y: -1100px;">
+        <div style="display: flex; justify-content: center;">
+            <div style="position: absolute; background-color: rgba(0, 0, 0, 0.75); height: 200px; width: 50%; padding: 15px;">
+                <h3> We, at SkateRGU know how important it is to keep our sport alive.</h3> </br>
+
+                <p style="color: #f34c7e;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh
+                    felis, dapibus a tristique eget, vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id
+                    condimentum nisi. In eu lacus id velit tempus gravida ac eget lectus. </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main - Core Information of the Website -->
+
+    <main style="padding: 0 25px 0;">
+        <br>
+        <h3> About Us</h3>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh felis, dapibus a tristique eget,
+            vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id condimentum nisi. In eu lacus id velit
+            tempus gravida ac eget lectus. Fusce at cursus turpis. Vivamus quis maximus nisl.
+            </br></br>
+
+            Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
+            neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
+            Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
+        </p>
+
+        </br>
+        <h3> How to start skateboarding?</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh felis, dapibus a tristique eget,
+            vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id condimentum nisi. In eu lacus id velit
+            tempus gravida ac eget lectus. Fusce at cursus turpis. Vivamus quis maximus nisl.
+            </br></br>
+
+            Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
+            neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
+            Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
+        </p></br>
+
+        <div id='imgs_grid'>
+            <img src="images\skate2.jpg" alt="Skateboarding photo number 2" width="1000" height="1500">
+            <img src="images\skate3.jpg" alt="Skateboarding photo number 3" width="1000" height="1778">
+        </div>
+
+        </br>
+        <h3> Why use our website to learn?</h3>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh felis, dapibus a tristique eget,
+            vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id condimentum nisi. In eu lacus id velit
+            tempus gravida ac eget lectus. Fusce at cursus turpis. Vivamus quis maximus nisl.
+            </br></br>
+
+            Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
+            neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
+            Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
+        </p>
+
+        </br>
+
+        <h3> Latest Tweets</h3>
+
+        <div class="tweets-container">
+            <div class = "tweet">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">skater: shohey <a href="https://t.co/aCwB44xUue">pic.twitter.com/aCwB44xUue</a></p>&mdash; SKATEBOARDING 🛹 (@letsskateok) <a href="https://twitter.com/letsskateok/status/1643225428281159681?ref_src=twsrc%5Etfw">April 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+
+            <div  class = "tweet">
+                <blockquote class="twitter-tweet"><p lang="und" dir="ltr">🔥 Dakota Servold 🔥 <a href="https://twitter.com/hashtag/ThisIsEmerica?src=hash&amp;ref_src=twsrc%5Etfw">#ThisIsEmerica</a> <a href="https://t.co/hIpJzIc6wJ">pic.twitter.com/hIpJzIc6wJ</a></p>&mdash; Emerica (@Emerica) <a href="https://twitter.com/Emerica/status/1642938530472296449?ref_src=twsrc%5Etfw">April 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+
+            <div  class = "tweet">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">top tier skate photography <a href="https://t.co/KGZ2tMrXnn">pic.twitter.com/KGZ2tMrXnn</a></p>&mdash; blatantnostalgia (@blatantnstalgia) <a href="https://twitter.com/blatantnstalgia/status/1639468507644538881?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+        </div>
+        </br>
+        <h3> Check our merch!</h3>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh felis, dapibus a tristique eget,
+            vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id condimentum nisi. In eu lacus id velit
+            tempus gravida ac eget lectus. Fusce at cursus turpis. Vivamus quis maximus nisl.
+            </br></br>
+
+            Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
+            neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
+            Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
+        </p></br>
+
+    </main>
+        <!-- Aside - Contains secondary information and links -->
+        <aside style="height: auto;">
+            <!-- Simple artle with news on home page-->
+            <div id="aside-article">
+                <img style="float: left;" src="images\skate11.png" alt="Skateboarding photo number 11" width="150" height="150">
+                <h2> Latest News! 07.04.2023</h2>
+                <p style="color: #EC8700">We just launched our merch designs! If you would like to browse them and see which ones you like, please visit our <a href="merch.html">merch</a> part of the website!.</p>
+
+            </div>
+            <br/>
+
+            <a target="_blank" href="https://www.youtube.com">
+                <div style="background-image: url('images/s-yt.png'); background-size: 100%;">YOUTUBE</div></a>
+            <a target="_blank" href="https://www.twitter.com">
+                <div style="background-image: url('images/s-twitter.png'); background-size: 100%;">TWITTER</div></a>
+            <a target="_blank" href="https://www.instagram.com">
+                <div style="background-image: url('images/s-insta.png'); background-size: 100%;">INSTAGRAM</div></a>
+            <a target="_blank" href="merch.html">
+                <div style="background-image: url('images/s-merch.png'); background-size: 100%;">MERCH</div></a>
+            <a target="_blank" href="blog.html">
+                <div style="background-image: url('images/s-blog.png'); background-size: 100%;">BLOG</div></a>
+        </aside>
+    <!-- Footer - Background information about the website --> 
+    <footer> Hello this is a cool footer, thank you for visiting my website</br>© Matt Borowicz 2023. All Rights Reserved</footer>
+</body>
+
+</html>

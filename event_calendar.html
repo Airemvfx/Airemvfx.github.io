@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head Section - Internal/External features, CSS and JS-->
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- CSS and JavaScript Integration -->
+    <link rel="stylesheet" href="css\css_master.css">
+    <link rel="stylesheet" href="css\css_local.css">
+    <script src="scripts/js_master.js"></script>
+
+    <title>SkateRGU - Events Calendar</title>
+</head>
+
+<!-- Body Section - Information and Layout -->
+
+<body style="background-color: #3D3A36;">
+    <nav>
+        <!-- Logo of the website -->
+        <a href="index.html"><img class="logo" src="images/logo/logo_color.png" alt="Logo" width="500" height="500">
+        </a>
+        <ul><b>
+                <!-- Required Pages -->
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="img_gallery.html">Gallery</a></li>
+                <li><a class="active" href="current_members.html">Members</a></li>
+                <li><a class="active" href="event_calendar.html">Events</a></li>
+                <li><a class="active" href="contact_us.html">Contact us</a></li>
+                <!-- Custom Pages -->
+                <li><a class="active" href="merch.html">Merch</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a class="active" href="FAQ.html">F.A.Q</a></li>
+                <!-- Login JS Form here  -->
+                <li>
+                    <form id="form-login" name="login">
+                        <input id="user" type="text" name="name" value="" placeholder="Your Username" /> <br />
+                        <input id="password" type="text" name="password" value="" placeholder="Your Password" /> <br />
+                        <button id="loginButton" type="button" onclick="loginAlert()">Login</button>
+                    </form>
+                </li>
+        </ul></b>
+    </nav>
+
+    <!-- Header Section - Website Introduction -->
+
+    <header
+        style="position: relative; height: 200px; background-image: url('images/skate1.jpg'); background-size: 83%; background-position-y: -1100px;">
+        <div
+            style="position: absolute; margin-left: 43%; height: 100px; width: auto; background-color: rgba(0, 0, 0, 0.75); top: 60px; padding-top: 10px;">
+            <h3 style="position: relative; bottom: 10px;"> Events Calendar</h3>
+            <p style="position: relative; bottom: 14px; color: #f34c7e;"> Here you can check our schedule!</p>
+        </div>
+    </header>
+
+    <!-- Main - Core Information of the Website -->
+
+    <!-- Contact Us Form -->
+    <main style="text-align: center; width: 50%; margin: 0 auto; padding: 0 25px 0;">
+        <br>
+        <h3> About our Calendar</h3>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh felis, dapibus a tristique eget,
+            vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id condimentum nisi. In eu lacus id velit
+            tempus gravida ac eget lectus. Fusce at cursus turpis. Vivamus quis maximus nisl.
+            </br></br>
+        </p>
+
+        </br>
+
+        <table>
+            <tr class="tableTitle">
+                <td></td>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+
+            <tr>
+                <th class="tableTitle">Week 1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1 Hour group session</br> In-Person @ Skatepark</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th class="tableTitle">Week 2</th>
+                <td></td>
+                <td> Theory about skateboarding </br> In-Person @ Skatepark</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <th class="tableTitle">Week 3</th>
+                <td></td>
+                <td> 1 Hour group session</br> In-Person @ Skatepark </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <th class="tableTitle">Week 4</th>
+                <td></td>
+                <td> 2 Hours group session</br> In-Person @ Skatepark </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <th class="tableTitle">Week 5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> Video call</br> Online @ Zoom </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <th class="tableTitle">Week 6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> 1 Hour group session</br> In-Person @ Skatepark </td>
+            </tr>
+
+
+            <tr>
+                <th class="tableTitle">Week 7</th>
+                <td> Theory about skateboarding </br> In-Person @ Skatepark </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <th class="tableTitle">Week 8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> Skateboarding Tricks 1h </td>
+                <td> Skateboarding Tricks 1h </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            <tr>
+                <th class="tableTitle">Week 9</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> 1 Hour group session</br> In-Person @ Skatepark  </td>
+                <td></td>
+            </tr>
+        </table>
+
+
+        <!-- Form to suggest events: -->
+            <br/>
+            <p style="color: #EC8700">Want to recommend an event? Tell us below!</p>
+          
+            <form name="event">
+              <label for="event_title">Event title:</label>
+              <input type="text" id="event_title" name="event_title" placeholder="Enter event title">
+          
+              <label for="event_date">Event date:</label>
+              <input type="date" id="event_date" name="event_date">
+          
+              <button onclick="submitEvent()" type="submit" style="color:#f34c7e;">Submit Event</button>
+            </form>
+
+          
+    </main>
+
+    <!-- Aside - Contains secondary information and links -->
+    <aside>
+        <a target="_blank" href="https://www.youtube.com">
+            <div style="background-image: url('images/s-yt.png'); background-size: 100%;">YOUTUBE</div>
+        </a>
+        <a target="_blank" href="https://www.twitter.com">
+            <div style="background-image: url('images/s-twitter.png'); background-size: 100%;">TWITTER</div>
+        </a>
+        <a target="_blank" href="https://www.instagram.com">
+            <div style="background-image: url('images/s-insta.png'); background-size: 100%;">INSTAGRAM</div>
+        </a>
+        <a target="_blank" href="merch.html">
+            <div style="background-image: url('images/s-merch.png'); background-size: 100%;">MERCH</div>
+        </a>
+        <a target="_blank" href="blog.html">
+            <div style="background-image: url('images/s-blog.png'); background-size: 100%;">BLOG</div>
+        </a>
+    </aside>
+    <!-- Footer - Background information about the website -->
+    <footer> Hello this is a cool footer, thank you for visiting my website</br>© Matt Borowicz 2023. All Rights Reserved</footer>
+
+</html>

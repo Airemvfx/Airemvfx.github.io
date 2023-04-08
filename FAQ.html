@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<!--
+Threat Detected:
+Threat Source: External
+Threat Agent: Human / AnonyMouse
+Threat Intention: Intentional
+Threat Motivation: Extract user data from the website
+Threat Impact: Personal information stolen, used for illegal activities
+Threat Mitigation: There should be login validation implemented. This could be done using 2FA or 3FA to make sure maximum security for all members of the website 
+-->
+
+<!-- Head Section - Internal/External features, CSS and JS-->
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- CSS and JavaScript Integration -->
+    <link rel="stylesheet" href="css\css_master.css">
+    <link rel="stylesheet" href="css\css_local.css">
+    <script src="scripts/js_master.js"></script>
+    
+    <title>SkateRGU - F.A.Q</title>
+</head>
+
+<!-- Body Section - Information and Layout -->
+
+<body>
+    <nav>
+        <!-- Logo of the website -->
+        <a href="index.html"><img class="logo" src="images/logo/logo_color.png" alt="Logo" width="500" height="500">
+        </a>
+        <ul><b>
+                <!-- Required Pages -->
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="img_gallery.html">Gallery</a></li>
+                <li><a class="active" href="current_members.html">Members</a></li>
+                <li><a class="active" href="event_calendar.html">Events</a></li>
+                <li><a class="active" href="contact_us.html">Contact us</a></li>
+                <!-- Custom Pages -->
+                <li><a class="active" href="merch.html">Merch</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a class="active" href="FAQ.html">F.A.Q</a></li>
+                <!-- Login JS Form here  -->
+                <li>
+                    <form id="form-login" name="login">
+                        <input id="user" type="text" name="name" value="" placeholder="Your Username" /> <br />
+                        <input id="password" type="text" name="password" value="" placeholder="Your Password" /> <br />
+                        <button id="loginButton" type="button" onclick="loginAlert()">Login</button>
+                    </form>
+                </li>
+        </ul></b>
+    </nav>
+    <!-- Header Section - Website Introduction -->
+    <header
+    style="position: relative; height: 200px; background-image: url('images/skate1.jpg'); background-size: 83%; background-position-y: -1100px;">
+    <div
+      style="position: absolute; margin-left: 38%; height: 100px; width: auto; background-color: rgba(0, 0, 0, 0.75); top: 60px; padding-top: 10px;">
+      <h3 style="position: relative; bottom: 10px;"> Frequently Asked Questions (F.A.Q)</h3>
+      <p style="position: relative; bottom: 14px; color: #f34c7e;"> You can find Frequently Asked Questions here!</p>
+    </div>
+  </header>
+
+    <!-- Main - Core Information of the Website -->
+
+    <main style="padding: 0 25px 0;">
+        <br>
+
+        <h3> What is this skateboarding website for?</h3>
+        <p> A skateboarding website is an online platform dedicated to providing information and resources about skateboarding. It typically includes news, product reviews, tutorials, and videos related to skateboarding.
+        </br></br>
+        A skateboarding website may also offer an online store where users can purchase skateboarding gear, as well as forums or communities where skateboarders can connect with each other and share tips and tricks. Some websites may also offer online skateboarding lessons or information about skateboarding events.
+        </p>
+    </br>
+
+        <h3> What kind of content can I expect to find on a skateboarding website?</h3>
+        <p> A skateboarding website typically offers a wide variety of content related to skateboarding. This can include articles about skateboarding culture and history, interviews with professional skateboarders, reviews of skateboarding gear, tutorials for tricks, and videos of skateboarders in action. The content on a skateboarding website is often organized into categories, such as news, reviews, tutorials, and videos, to make it easier for users to find what they're looking for.
+        </p>
+    </br>
+
+        <h3> Are skateboarding websites only for experienced skaters?</h3>
+        <p> No, skateboarding websites cater to skateboarders of all skill levels, from beginners to advanced skaters. They provide resources and tips for people who are just starting out, as well as content for more experienced skateboarders. For beginners, a skateboarding website may offer tutorials on basic tricks and tips for choosing the right skateboard gear. For advanced skateboarders, a website may offer information about the latest trends in skateboarding, interviews with professional skateboarders, and tips for mastering difficult tricks.
+        </p>
+    </br>
+
+        <h3> Can I buy skateboarding gear on a skateboarding website?</h3>
+        <p> Many skateboarding websites have online stores where users can purchase skateboarding gear, such as skateboards, wheels, trucks, and protective gear. These stores may offer a wide range of products from different brands, and may provide detailed product information and customer reviews to help users make informed purchasing decisions. Some skateboarding websites may also offer discounts or special promotions on certain products.
+        </p>
+    </br>
+
+        
+        <h3> How can I stay up-to-date with the latest news in the skateboarding world?</h3>
+        <p> Skateboarding websites are a great way to stay up-to-date with the latest news in the skateboarding world.
+            
+            <br/> <br/>
+        They often publish news articles and blog posts about the latest events and developments in the skateboarding industry, as well as interviews with professional skateboarders and other notable figures in the skateboarding community. Some websites may also offer email newsletters or social media accounts that users can follow to stay informed about the latest news.
+        </p>
+    </br>
+
+        <h3> Can I contribute my own content to a skateboarding website?</h3>
+        <p> Yes, many skateboarding websites allow users to contribute their own content, such as articles, photos, videos, and blog posts. This can be a great way to share your own experiences and perspectives with the wider skateboarding community. Before submitting content, it's important to read the website's submission guidelines to ensure that your content meets their standards. 
+            <br/> <br/>
+        This may include guidelines on the length and format of the content, as well as rules around appropriate language and content. Some websites may also require you to sign up for an account before you can submit content. Once your content has been submitted, it may be reviewed by the website's editors before it is published on the site. If you're interested in contributing content to a skateboarding website, it's a good idea to start by building relationships with the website's staff and contributors, and to engage with the community by leaving comments and participating in forums and social media discussions
+        </p>
+    </br>
+
+
+    </main>
+        <!-- Aside - Contains secondary information and links -->
+        <aside style="height: auto;">
+            <br/>
+
+            <a target="_blank" href="https://www.youtube.com">
+                <div style="background-image: url('images/s-yt.png'); background-size: 100%;">YOUTUBE</div></a>
+            <a target="_blank" href="https://www.twitter.com">
+                <div style="background-image: url('images/s-twitter.png'); background-size: 100%;">TWITTER</div></a>
+            <a target="_blank" href="https://www.instagram.com">
+                <div style="background-image: url('images/s-insta.png'); background-size: 100%;">INSTAGRAM</div></a>
+            <a target="_blank" href="merch.html">
+                <div style="background-image: url('images/s-merch.png'); background-size: 100%;">MERCH</div></a>
+            <a target="_blank" href="blog.html">
+                <div style="background-image: url('images/s-blog.png'); background-size: 100%;">BLOG</div></a>
+        </aside>
+    <!-- Footer - Background information about the website --> 
+    <footer> Hello this is a cool footer, thank you for visiting my website</br>© Matt Borowicz 2023. All Rights Reserved</footer>
+</body>
+
+</html>

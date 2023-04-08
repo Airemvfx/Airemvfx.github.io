@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head Section - Internal/External features, CSS and JS-->
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- CSS and JavaScript Integration -->
+  <link rel="stylesheet" href="css\css_master.css">
+  <link rel="stylesheet" href="css\css_local.css">
+  <script src="scripts/js_master.js"></script>
+
+  <title>SkateRGU - Gallery</title>
+</head>
+
+<!-- Body Section - Information and Layout -->
+
+<body>
+  <nav>
+    <!-- Logo of the website -->
+    <a href="index.html"><img class="logo" src="images/logo/logo_color.png" alt="Logo" width="500" height="500">
+    </a>
+    <ul><b>
+            <!-- Required Pages -->
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="img_gallery.html">Gallery</a></li>
+            <li><a class="active" href="current_members.html">Members</a></li>
+            <li><a class="active" href="event_calendar.html">Events</a></li>
+            <li><a class="active" href="contact_us.html">Contact us</a></li>
+            <!-- Custom Pages -->
+            <li><a class="active" href="merch.html">Merch</a></li>
+            <li><a class="active" href="blog.html">Blog</a></li>
+            <li><a class="active" href="FAQ.html">F.A.Q</a></li>
+            <!-- Login JS Form here  -->
+            <li>
+                <form id="form-login" name="login">
+                    <input id="user" type="text" name="name" value="" placeholder="Your Username" /> <br />
+                    <input id="password" type="text" name="password" value="" placeholder="Your Password" /> <br />
+                    <button id="loginButton" type="button" onclick="loginAlert()">Login</button>
+                </form>
+            </li>
+    </ul></b>
+</nav>
+
+  <!-- Header Section - Website Introduction -->
+
+  <header
+    style="position: relative; height: 200px; background-image: url('images/skate1.jpg'); background-size: 83%; background-position-y: -1100px;">
+    <div
+      style="position: absolute; margin-left: 43%; height: 100px; width: auto; background-color: rgba(0, 0, 0, 0.75); top: 60px; padding-top: 10px;">
+      <h3 style="position: relative; bottom: 10px;"> Contact Us</h3>
+      <p style="position: relative; bottom: 14px; color: #f34c7e;"> Here you can contact us if you need help</p>
+    </div>
+  </header>
+
+  <!-- Main - Core Information of the Website -->
+
+  <!-- Contact Us Form -->
+  <main style="text-align: center; padding: 0 25px 0;">
+    <div style="width: 50%; margin-left: 25%;">
+        <form>
+            <fieldset>
+                <legend style="color: #ad3a5d;">Contact Us using the form below.</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" name="name" value=""/> <br/>
+
+                <label for="name">Email:</label>
+                <input type="text" name="name" value=""/> <br/>
+            
+                <label for="membership">Membership Status: </label>
+                <select id="membership" name="membership">
+                    <option value="membership" style="color: #ad3a5d;">membership</option>
+                    <option value="non-membership" style="color: #ad3a5d;">non-membership</option>
+                    <option value="VIP" style="color: #ad3a5d;">VIP membership</option>
+                </select> <br/>
+                <label for="name">Comments: </label>
+                <input type="text" name="name" value=""/> <br/>
+
+                <div style="width: 50%; margin-left: 25%; background-color: rgba(0, 0, 0, 0.45);">
+                    <label for="myfile">Attach a file: </label>
+                    <input type="file" id="myfile" name="myfile"/> <br/>
+                </div>
+                <button type="button" value="Submit Form" style="color: #ad3a5d;" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <!-- Form outcome paragraph to display once the button has been clicked-->
+        <br/>
+        <div>
+            <p id="form_outcome"></p>
+        </div>
+        <br/>
+    <!-- Additional Paragraph-->
+        <br>
+        <h3> How to use our form:</h3>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh felis, dapibus a tristique eget,
+            vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id condimentum nisi. In eu lacus id velit
+            tempus gravida ac eget lectus. Fusce at cursus turpis. Vivamus quis maximus nisl.
+            </br></br>
+
+            Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
+            neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
+            Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
+        </p>
+
+        </br>
+
+        <h3> Our other forms of contact:</h3>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh felis, dapibus a tristique eget,
+            vulputate nec mauris. Sed pellentesque et tellus ac egestas. Sed id condimentum nisi. In eu lacus id velit
+            tempus gravida ac eget lectus. Fusce at cursus turpis. Vivamus quis maximus nisl.
+            </br></br>
+
+            Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
+            neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
+            Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
+        </p>
+
+        </br>
+      
+
+  </main>
+
+  <!-- Aside - Contains secondary information and links -->
+  <aside>
+    <a target="_blank" href="https://www.youtube.com">
+      <div style="background-image: url('images/s-yt.png'); background-size: 100%;">YOUTUBE</div>
+    </a>
+    <a target="_blank" href="https://www.twitter.com">
+      <div style="background-image: url('images/s-twitter.png'); background-size: 100%;">TWITTER</div>
+    </a>
+    <a target="_blank" href="https://www.instagram.com">
+      <div style="background-image: url('images/s-insta.png'); background-size: 100%;">INSTAGRAM</div>
+    </a>
+    <a target="_blank" href="merch.html">
+      <div style="background-image: url('images/s-merch.png'); background-size: 100%;">MERCH</div>
+    </a>
+    <a target="_blank" href="blog.html">
+      <div style="background-image: url('images/s-blog.png'); background-size: 100%;">BLOG</div>
+    </a>
+  </aside>
+  <!-- Footer - Background information about the website -->
+  <footer> Hello this is a cool footer, thank you for visiting my website</br>© Matt Borowicz 2023. All Rights Reserved</footer>
+</body>
+
+</html>
