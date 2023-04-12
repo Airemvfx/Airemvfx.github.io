@@ -1,2 +1,0 @@
-follow most labs a little for guide
-have to run the website through accessibility checker: https://validator.w3.org/#validate_by_upload
