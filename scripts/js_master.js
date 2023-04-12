@@ -30,13 +30,13 @@ function loginAlert() {
     counter += 1;
 }
 
-// Events Page - Form submition functionality
+// Events Page - Form submission functionality
 function submitEvent() {
     // assignment of variables
     var title = document.forms["event"]["event_title"].value;
     var date = document.forms["event"]["event_date"].value;
 
-    // logical operation system for security
+    // logical operation for security
     if (title == "") {
         alert("An event must have a title!");
     }
@@ -47,6 +47,23 @@ function submitEvent() {
         else {
             alert("Event submitted! The society will contact you soon!");
         }
+    }
+}
+
+// Contact Us - Form submission functionality
+function validateForm() {
+    // get values of required fields
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var membership = document.getElementById("membership").value;
+
+    // check if required fields are empty
+    if (name == "" || email == "" || membership == "membership") {
+        alert("Please fill in all required fields.");
+        return false; // prevent form submission
+    }
+    else{
+        document.getElementById("form_outcome").innerHTML="Form has been sent successfully!";
     }
 }
 
