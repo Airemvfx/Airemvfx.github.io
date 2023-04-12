@@ -1,5 +1,6 @@
-/* >>> LOCAL - index.html (main)*/
+/*I made this additional css file to keep one-time styling usages for specific parts of the website, hence lots of #IDs */
 
+/* >>> LOCAL - index.html (main)*/
 /*stylised grid for images*/
 #imgs_grid{
     background-color: #3D3A36; 

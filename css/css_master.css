@@ -46,7 +46,7 @@ footer{
   text-align: center;
 }
 aside{
-  height: 270px;
+  height: auto;
   width: 100%;
   background-color: #3D3A36;
 }
@@ -148,7 +148,6 @@ nav ul li a{
 li{
   float: left;
 }
-
 /*Active element color animation*/
 .active{
   color: #ee5180;
@@ -190,4 +189,64 @@ td:hover{
 .tweet {
   width: calc(33.33% - 10px);
   margin-bottom: 20px;
+}
+
+/*Optimalisation for different resolutions and accesibility*/
+/* Laptop devices*/
+@media only screen and (max-width: 1366px) {
+  nav{
+    height: auto;
+  }
+  .logo{
+    display: none;
+  }
+  header{
+    height: 300px !important;
+  }
+  #blackbox{
+    margin-left: 24% !important;
+  }
+  header div div{
+    width: 80% !important;
+    top: 180px !important;
+  }
+  #imgs_grid img{
+    bottom : 75px !important;
+    height: auto !important;
+    left: 1%;
+  }
+  .div-merch{
+    height: auto !important; 
+  }
+
+}
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  nav{
+    height: auto;
+  }
+  .logo{
+    display: none;
+  }
+  header{
+    height: 600px !important;
+  }
+  header div{
+    height: auto !important;
+  }
+  #imgs_grid img{
+    bottom : -75px !important;
+    height: 400px !important;
+    left: 1%;
+  }
+  header div div{
+    width: 80% !important;
+    bottom: 200px !important;
+  }
+}
+/*Visual Adjustments*/
+@media only screen and (max-width: 1000px) {
+  header{
+    height: 500px !important;
+  }
 }
