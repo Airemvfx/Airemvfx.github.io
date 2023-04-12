@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!--
 Threat Detected:
 Threat Source: External
@@ -12,6 +12,8 @@ Threat Mitigation: There should be login validation implemented. This could be d
 
 <!-- Head Section - Internal/External features, CSS and JS-->
 <head>
+    <!-- Character Encoding Type -->
+    <meta charset="UTF-8">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -20,8 +22,8 @@ Threat Mitigation: There should be login validation implemented. This could be d
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- CSS and JavaScript Integration -->
-    <link rel="stylesheet" href="css\css_master.css">
-    <link rel="stylesheet" href="css\css_local.css">
+    <link rel="stylesheet" href="css/css_master.css">
+    <link rel="stylesheet" href="css/css_local.css">
     <script src="scripts/js_master.js"></script>
     
     <title>SkateRGU - Blog</title>
@@ -34,7 +36,7 @@ Threat Mitigation: There should be login validation implemented. This could be d
         <!-- Logo of the website -->
         <a href="index.html"><img class="logo" src="images/logo/logo_color.png" alt="Logo" width="500" height="500">
         </a>
-        <ul><b>
+        <ul>
                 <!-- Required Pages -->
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a class="active" href="img_gallery.html">Gallery</a></li>
@@ -48,12 +50,12 @@ Threat Mitigation: There should be login validation implemented. This could be d
                 <!-- Login JS Form here  -->
                 <li>
                     <form id="form-login" name="login">
-                        <input id="user" type="text" name="name" value="" placeholder="Your Username" /> <br />
-                        <input id="password" type="text" name="password" value="" placeholder="Your Password" /> <br />
+                        <input id="user" type="text" name="name" value="" placeholder="Your Username"> <br>
+                        <input id="password" type="text" name="password" value="" placeholder="Your Password"> <br>
                         <button id="loginButton" type="button" onclick="loginAlert()">Login</button>
                     </form>
                 </li>
-        </ul></b>
+        </ul>
     </nav>
     <!-- Header Section - Website Introduction -->
     <header
@@ -77,56 +79,56 @@ Threat Mitigation: There should be login validation implemented. This could be d
             Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
             neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
             Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
-            </br></br>
+            <br><br>
 
             Proin dictum et odio nec fringilla. Nullam et pellentesque risus, id efficitur nibh. In accumsan ipsum ac
             neque eleifend, vel tincidunt massa faucibus. Donec a nunc sit amet libero luctus dapibus vitae sed enim.
             Praesent eget enim justo. Nam nec sodales est, at condimentum enim. Ut ullamcorper est ac luctus vehicula.
         </p>
 
-    </br>
+    <br>
 
-    <div style="background-color: rgb(84, 84, 84); border-radius: 50px; padding: 20px; width: 80%;"> 
+    <div class="div-blog" style="background-color: rgb(84, 84, 84); border-radius: 50px; padding: 20px; width: 80%;"> 
         <p>NEW!</p>
         <h2 style="margin-left: 15px;">ERASED crew in San Francisco?</h2>
         <!--<p style="margin-left: 15px; color:#f34c7e; font-size: 10pt;">If the video does not work, it might be due to API key. Please click the video to redirect you to YouTube website!</p>-->
         <p style=" height: auto; width: 85%;">Watch the latest video of Luis Mora, a YouTuber with almost 2 million subscribers, showing his crew crusing around the streets of San Francisco. Luis Mora prepared a short montage of his crew's tricks - we encourage you to watch his whole video on YouTube!</p>
 
-        <iframe style="margin-left: 10px; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/dGsUZ3qiIMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="margin-left: 10px; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/dGsUZ3qiIMw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
     </div>
-    </br></br>
+    <br><br>
 
-    <div style="background-color: rgb(84, 84, 84); border-radius: 50px; padding: 20px; width: 80%;"> 
+    <div class="div-blog" style="background-color: rgb(84, 84, 84); border-radius: 50px; padding: 20px; width: 80%;"> 
         <p>Added - 16.04.2023</p>
         <h2 style="margin-left: 15px;">Skateboarding in Unusual Places</h2>
         <p style="height: auto; width: 85%;">Skateboarding is all about freedom and creativity, so why limit it to skateparks and the usual spots? This topic could showcase skateboarders who take their skills to unexpected places, like abandoned buildings, construction sites, or even on the water. The blog post could include photos or videos of these skaters in action, as well as interviews or profiles of some of the most daring and innovative riders. This topic could inspire readers to think outside the box and explore new ways to enjoy their own skateboarding.</p>
 
-        <img src="images/blog-wide.png" alt="Wide picture of skateboarding" width="1305" height="397"> 
+        <img src="images/blog-wide.png" alt="Wide picture of skateboarding" width="1305" height="397" style="width: 80%; height: 80%;"> 
 
-    </br>
+    <br>
 
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The hills have eyes 👀 <a href="https://t.co/yNZM9c5x45">pic.twitter.com/yNZM9c5x45</a></p>&mdash; SKATEBOARDING (@SkaterGains) <a href="https://twitter.com/SkaterGains/status/1644111288501428225?ref_src=twsrc%5Etfw">April 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The hills have eyes 👀 <a href="https://t.co/yNZM9c5x45">pic.twitter.com/yNZM9c5x45</a></p>&mdash; SKATEBOARDING (@SkaterGains) <a href="https://twitter.com/SkaterGains/status/1644111288501428225?ref_src=twsrc%5Etfw">April 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script> 
         
     </div>
-    </br></br>
+    <br><br>
 
-    <div style="background-color: rgb(84, 84, 84); border-radius: 50px; padding: 20px; width: 80%;"> 
+    <div class="div-blog" style="background-color: rgb(84, 84, 84); border-radius: 50px; padding: 20px; width: 80%;"> 
         <p>Added - 08.04.2023</p>
         <h2 style="margin-left: 15px;">Matt finally hits a kickflip!</h2>
         <p style="height: auto; width: 85%;">Oh my goodness, hold onto your hats and prepare for a miracle because it finally happened - Matt has landed a kickflip! The world must be coming to an end because this is truly a once-in-a-lifetime occurrence. It's almost as if the planets aligned and the stars shone down upon him, guiding his feet to finally make contact with the skateboard at just the right angle. You could practically hear the angels singing as the board flipped over and Matt landed it like a pro.
 
             I mean, who would have thought that someone who can barely stand on a skateboard, let alone do any tricks, could actually land a kickflip? It's like watching a penguin suddenly take flight and soar through the sky. We might as well nominate Matt for the next Olympics because if he can pull off a kickflip, who knows what other incredible feats he's capable of. Maybe he'll be the first person to do a triple backflip while balancing a plate of spaghetti on his head. The possibilities are endless!</p>
 
-        <iframe style="margin-left: 10px; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/dGsUZ3qiIMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="margin-left: 10px; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/dGsUZ3qiIMw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
     </div>
-    </br></br>
+    <br><br>
 
     </main>
         <!-- Aside - Contains secondary information and links -->
         <aside style="height: auto;">
-            <br/>
+            <br>
             <a target="_blank" href="https://www.youtube.com">
                 <div style="background-image: url('images/s-yt.png'); background-size: 100%;">YOUTUBE</div></a>
             <a target="_blank" href="https://www.twitter.com">
@@ -139,7 +141,7 @@ Threat Mitigation: There should be login validation implemented. This could be d
                 <div style="background-image: url('images/s-blog.png'); background-size: 100%;">BLOG</div></a>
         </aside>
     <!-- Footer - Background information about the website --> 
-    <footer> Hello this is a cool footer, thank you for visiting my website</br>© Matt Borowicz 2023. All Rights Reserved</footer>
+    <footer> Hello this is a cool footer, thank you for visiting my website<br>© Matt Borowicz 2023. All Rights Reserved</footer>
 </body>
 
 </html>

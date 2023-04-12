@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!--
 Threat Detected:
 Threat Source: External
@@ -13,6 +13,8 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
 <!-- Head Section - Internal/External features, CSS and JS-->
 
 <head>
+    <!-- Character Encoding Type -->
+    <meta charset="UTF-8">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -21,8 +23,8 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- CSS and JavaScript Integration -->
-  <link rel="stylesheet" href="css\css_master.css">
-  <link rel="stylesheet" href="css\css_local.css">
+  <link rel="stylesheet" href="css/css_master.css">
+  <link rel="stylesheet" href="css/css_local.css">
   <script src="scripts/js_master.js"></script>
 
 
@@ -36,7 +38,7 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
     <!-- Logo of the website -->
     <a href="index.html"><img class="logo" src="images/logo/logo_color.png" alt="Logo" width="500" height="500">
     </a>
-    <ul><b>
+    <ul>
             <!-- Required Pages -->
             <li><a class="active" href="index.html">Home</a></li>
             <li><a class="active" href="img_gallery.html">Gallery</a></li>
@@ -50,20 +52,18 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
             <!-- Login JS Form here  -->
             <li>
                 <form id="form-login" name="login">
-                    <input id="user" type="text" name="name" value="" placeholder="Your Username" /> <br />
-                    <input id="password" type="text" name="password" value="" placeholder="Your Password" /> <br />
+                    <input id="user" type="text" name="name" value="" placeholder="Your Username"> <br>
+                    <input id="password" type="text" name="password" value="" placeholder="Your Password"> <br>
                     <button id="loginButton" type="button" onclick="loginAlert()">Login</button>
                 </form>
             </li>
-    </ul></b>
+    </ul>
 </nav>
-
   <!-- Header Section - Website Introduction -->
 
   <header
     style="position: relative; height: 200px; background-image: url('images/skate1.jpg'); background-size: 83%; background-position-y: -1100px;">
-    <div
-      style="position: absolute; margin-left: 33%; height: 100px; width: auto; background-color: rgba(0, 0, 0, 0.75); top: 60px; padding-top: 10px;">
+    <div id="blackbox" style="position: absolute; margin-left: 25%; height: 100px; width: auto; background-color: rgba(0, 0, 0, 0.75); top: 30%; padding-top: 10px;">
       <h3 style="position: relative; bottom: 10px;"> Image Gallery</h3>
       <p style="position: relative; bottom: 14px; color: #f34c7e;"> Browse a collection of our cool images of people
         skating in Aberdeen</p>
@@ -91,7 +91,7 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="images\wide1.jpg" alt="wide skateboarding image 1">
+          <img src="images/wide1.jpg" alt="wide skateboarding image 1">
           <div class="carousel-caption">
             <h3>Tom</h3>
             <p>Aberdeen, Torry 05/04/2023</p>
@@ -99,7 +99,7 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
         </div>
 
         <div class="item">
-          <img src="images\wide2.jpg" alt="wide skateboarding image 2">
+          <img src="images/wide2.jpg" alt="wide skateboarding image 2">
           <div class="carousel-caption">
             <h3>Jodie</h3>
             <p>Aberdeen, 05/04/2023</p>
@@ -107,7 +107,7 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
         </div>
 
         <div class="item">
-          <img src="images\wide3.jpg" alt="wide skateboarding image 3">
+          <img src="images/wide3.jpg" alt="wide skateboarding image 3">
           <div class="carousel-caption">
             <h3>Alex</h3>
             <p>Aberdeen, Northfield 06/04/2023</p>
@@ -134,31 +134,31 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
 <div id="img-gallery" class="container">
   <div class="row">
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate10.png" alt="skateboarding image 10" class="gallery-img" />
+      <img src="images/skate10.png" alt="skateboarding image 10" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate11.png" alt="skateboarding image 11" class="gallery-img" />
+      <img src="images/skate11.png" alt="skateboarding image 11" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate12.png" alt="skateboarding image 12" class="gallery-img" />
+      <img src="images/skate12.png" alt="skateboarding image 12" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate13.png" alt="skateboarding image 13" class="gallery-img" />
+      <img src="images/skate13.png" alt="skateboarding image 13" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate5.png" alt="skateboarding image 5" class="gallery-img" />
+      <img src="images/skate5.png" alt="skateboarding image 5" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate6.png" alt="skateboarding image 6" class="gallery-img" />
+      <img src="images/skate6.png" alt="skateboarding image 6" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate7.png" alt="skateboarding image 7" class="gallery-img" />
+      <img src="images/skate7.png" alt="skateboarding image 7" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate8.png" alt="skateboarding image 8" class="gallery-img" />
+      <img src="images/skate8.png" alt="skateboarding image 8" class="gallery-img">
     </div>
     <div class="col-md-4 fx-hover-greyscale">
-      <img src="images/skate9.png" alt="skateboarding image 9" class="gallery-img" />
+      <img src="images/skate9.png" alt="skateboarding image 9" class="gallery-img">
     </div>
   </div>
 </div>
@@ -186,7 +186,7 @@ Threat Mitigation: Before accessing the gallery, the website has to make sure th
     </a>
   </aside>
   <!-- Footer - Background information about the website -->
-  <footer> Hello this is a cool footer, thank you for visiting my website</br>© Matt Borowicz 2023. All Rights Reserved</footer>
+  <footer> Hello this is a cool footer, thank you for visiting my website<br>© Matt Borowicz 2023. All Rights Reserved</footer>
 </body>
 
 </html>
