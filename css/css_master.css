@@ -246,7 +246,7 @@ td:hover{
 }
 /*Visual Adjustments*/
 @media only screen and (max-width: 1000px) {
-  header{
-    height: 500px !important;
+  #header-index{
+    height: 800px !important;
   }
 }
