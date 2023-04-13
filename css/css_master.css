@@ -203,12 +203,8 @@ td:hover{
   header{
     height: 300px !important;
   }
-  #blackbox{
-    margin-left: 24% !important;
-  }
   header div div{
     width: 80% !important;
-    top: 180px !important;
   }
   #imgs_grid img{
     bottom : 75px !important;
