@@ -1,5 +1,3 @@
-/*Table Example for ref: https://bleakdev.github.io/Website-Stuff-RGU/event_calendar.html*/
-
 /* // MAIN TAGS */
 :root{
   background-color: #ad3a5d; 
@@ -12,11 +10,11 @@ body{
   background-image: url("skate1.jpg");
   background-repeat: repeat, repeat;
   color: #b9b9b9;
-  font-family:'Corbel','Gill Sans';
+  font-family: 'Corbel';
 
 }
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Corbel';
+  font-family: 'Calibri';
   color: #EC8700;
   font-size: 30px;
   padding-left: 20px;
