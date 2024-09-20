@@ -1,1 +1,81 @@
-<h1> Hello </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .countdown {
+            margin: 20px;
+        }
+        .countdown span {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Countdown Timers</h1>
+
+    <div class="countdown" id="countdown1">
+        <h2>Event 1</h2>
+        <span id="timer1">00d 00h 00m 00s</span>
+    </div>
+
+    <div class="countdown" id="countdown2">
+        <h2>Event 2</h2>
+        <span id="timer2">00d 00h 00m 00s</span>
+    </div>
+
+    <div class="countdown" id="countdown3">
+        <h2>Event 3</h2>
+        <span id="timer3">00d 00h 00m 00s</span>
+    </div>
+
+    <div class="countdown" id="countdown4">
+        <h2>Event 4</h2>
+        <span id="timer4">00d 00h 00m 00s</span>
+    </div>
+
+    <script>
+        // Set the dates and times for each countdown
+        const countdownDates = [
+            new Date("Dec 31, 2024 23:59:59").getTime(),
+            new Date("Nov 1, 2024 12:00:00").getTime(),
+            new Date("Oct 15, 2024 18:30:00").getTime(),
+            new Date("Sep 30, 2024 08:00:00").getTime()
+        ];
+
+        // Update the countdowns every 1 second
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+
+            countdownDates.forEach((countdownDate, index) => {
+                const distance = countdownDate - now;
+
+                // Calculate time units
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the corresponding element
+                document.getElementById("timer" + (index + 1)).innerHTML =
+                    days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+                // If the countdown is over, display "EXPIRED"
+                if (distance < 0) {
+                    document.getElementById("timer" + (index + 1)).innerHTML = "EXPIRED";
+                }
+            });
+        }, 1000);
+    </script>
+
+</body>
+</html>
